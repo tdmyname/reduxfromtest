@@ -4,9 +4,9 @@
 import React from "react"
 import {Field, reduxForm} from "redux-form"
 const ContactForm = (props) => {
-    const {handleSubmit,onClick}=props
+    const {handleSubmit}=props
     return (
-        <form onSubmit={handleSubmit(onClick)}>
+        <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="userName">UserName:</label>
                 <Field name="userName" component="input" type="text" placeholder="userName" />

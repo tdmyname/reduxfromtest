@@ -9,7 +9,7 @@ class Forms extends React.Component {
     render() {
         return (
             <div>
-                <Form  initialValues={this.props.login} value={this.props.login} onClick={this.props.loginAction}/>
+                <Form initialValues={this.props.login} value={this.props.login} onSubmit={this.props.loginAction}/>
             </div>
         )
     }
@@ -17,4 +17,4 @@ class Forms extends React.Component {
 const mapStateToProps = (state) => ({
     login: state.login,
 })
-export default connect(mapStateToProps,{loginAction})(Forms)
+export default connect(mapStateToProps, {loginAction})(Forms)
